@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projeto Ração de Canto — resgatando vidas, um pet de cada vez. Acompanhe os animais resgatados e saiba como ajudar."
+    />
+    <title>Ração de Canto — Resgatando Vidas</title>
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src 'self';
+      script-src  'self';
+      style-src   'self' https://fonts.googleapis.com;
+      font-src    https://fonts.gstatic.com;
+      img-src     'self' data: blob:;
+      connect-src 'none';
+      object-src  'none';
+      base-uri    'self';
+      form-action 'self';
+    "
+    />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700&family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Ração de Canto/css/Style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="#inicio" class="logo" aria-label="Ração de Canto — início">
+         <img src="/Ração de Canto/assets/images/Logo.png" alt="" class="logo-paw">
+          <span class="logo-text">Ração<em>de Canto</em></span>
+        </a>
+
+        <nav
+          class="nav-primary"
+          id="nav-primary"
+          aria-label="Navegação principal"
+        >
+          <ul class="nav-list">
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#equipe" class="nav-link">Equipe</a></li>
+            <li><a href="#pets" class="nav-link">Pets</a></li>
+            <li><a href="#noticias" class="nav-link">Notícias</a></li>
+            <li><a href="#galeria" class="nav-link">Galeria</a></li>
+            <li><a href="#ajudar" class="nav-link">Como Ajudar</a></li>
+            <li>
+              <a href="https://wa.link/9vu6ym" class="nav-link nav-link--cta">Quero Ajudar</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-primary"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-bg-shapes" aria-hidden="true">
+          <div class="bg-blob bg-blob--1"></div>
+          <div class="bg-blob bg-blob--2"></div>
+          <div class="bg-blob bg-blob--3"></div>
+        </div>
+
+        <div class="container hero-layout">
+          <div class="hero-text">
+            <span class="hero-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              Projeto Social · São Luís, MA
+            </span>
+            <h1 class="hero-title" id="hero-title">
+              Cada gesto<br />salva <em>uma vida</em>
+            </h1>
+            <p class="hero-desc">
+              Oferecer um punhado de ração, abrir sua casa ou adotar um animal
+              são atos simples que transformam histórias. Conectamos você a
+              animais que precisam de cuidado.
+            </p>
+            <div class="hero-actions">
+              <a href="#pets" class="btn btn--primary">Ver pets para adoção</a>
+              <a href="#ajudar" class="btn btn--outline">Como posso ajudar</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-img-frame">
+              <img
+                src="/Ração de Canto/assets/images/Pet/Fiel.png"
+                alt=""
+                class="hero-img"
+                role="presentation"
+              />
+              <div class="hero-img-badge">
+                <span class="badge-number">x</span>
+                <span class="badge-label">adoções realizadas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats-bar">
+          <div
+            class="container stats-row"
+            role="list"
+            aria-label="Estatísticas do projeto"
+          >
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" data-value="x">x</span>
+              <span class="stat-label">Resgatados</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" data-value="x">x</span>
+              <span class="stat-label">Adotados</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" data-value="x">x</span>
+              <span class="stat-label">Famílias acolhedoras</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" data-value="x">x</span>
+              <span class="stat-label">Anos de projeto</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section class="sobre section" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container sobre-grid">
+          <div class="sobre-media" aria-hidden="true">
+            <div class="media-stack">
+              <div class="media-card media-card--main">
+                <img
+                  src="/Ração de Canto/assets/images/Pet/Galeria/Fiel repousando.jpeg"
+                  alt=""
+                  role="presentation"
+                  class="media-img"
+                />
+              </div>
+              <div class="media-card media-card--secondary">
+                <img
+                  src="/Ração de Canto/assets/images/Pet/Galeria/Fiel de protetor de pescoço.jpeg"
+                  alt=""
+                  role="presentation"
+                  class="media-img"
+                />
+              </div>
+              <div class="media-float-badge">
+                <span>🐾</span>
+                <span>Desde xxxx</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobre-content">
+            <span class="section-label mobile">Sobre o Projeto</span>
+            <h2 class="section-title" id="sobre-titulo">
+              Nascemos de um canto da rua,<br /><em>crescemos pelo amor</em>
+            </h2>
+            <p class="sobre-text">
+              O Ração de Canto surgiu em xxxx quando um grupo de jovens
+              começou a alimentar animais abandonados nas ruas de São Luís. Com
+              o tempo, o cuidado foi além da ração: vieram os resgates, os
+              tratamentos veterinários e as campanhas de adoção.
+            </p>
+
+            <ul class="valores-list" aria-label="Nossos valores">
+              <li class="valor-item">
+                <div class="valor-icon" aria-hidden="true">🩺</div>
+                <div>
+                  <strong>Saúde em primeiro lugar</strong>
+                  <p>
+                    Todos os animais recebem vacinas, vermifugação e castração
+                    antes da adoção.
+                  </p>
+                </div>
+              </li>
+              <li class="valor-item">
+                <div class="valor-icon" aria-hidden="true">🏡</div>
+                <div>
+                  <strong>Adoção responsável</strong>
+                  <p>
+                    Triagem cuidadosa e acompanhamento pós-adoção por 30 dias.
+                  </p>
+                </div>
+              </li>
+              <li class="valor-item">
+                <div class="valor-icon" aria-hidden="true">🤝</div>
+                <div>
+                  <strong>Comunidade unida</strong>
+                  <p>
+                    Trabalhamos junto à vizinhança para criar uma cultura de
+                    respeito animal.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EQUIPE -->
+      <section
+        class="equipe section section--warm"
+        id="equipe"
+        aria-labelledby="equipe-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Nossa Equipe</span>
+            <h2 class="section-title" id="equipe-titulo">
+              As pessoas por trás de<br /><em>cada resgate</em>
+            </h2>
+            <p class="section-subtitle">
+              Conheça os voluntários que dedicam tempo e coração para
+              transformar a vida dos animais de rua.
+            </p>
+          </header>
+
+          <div class="equipe-grid">
+            <article class="membro-card">
+              <div class="membro-img-wrap">
+                <img
+                  src="/Ração de Canto/assets/images/Members/Yasmin.jpg"
+                  alt="Foto de Yasmin"
+                  class="membro-img"
+                />
+                <div class="membro-role-tag">Fundadora &amp; Coordenadora</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Yasmin Valéria</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
+                </p>
+              </div>
+            </article>
+
+            <article class="membro-card">
+              <div class="membro-img-wrap">
+                <img
+                  src="/Ração de Canto/assets/images/Members/Foto - Juan.png"
+                  alt="Foto de Juan "
+                  class="membro-img"
+                />
+                <div class="membro-role-tag">Papel no projeto</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Juan</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
+                </p>
+              </div>
+            </article>
+
+            <article class="membro-card">
+              <div class="membro-img-wrap">
+                <img
+                  src="/Ração de Canto/assets/images/Members/Juliana Campelo.jpg"
+                  alt="Foto de Juliana Campêlo"
+                  class="membro-img"
+                />
+                <div class="membro-role-tag">Papel no projeto</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Juliana Campêlo</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
+                </p>
+              </div>
+            </article>
+
+            <article class="membro-card">
+              <div class="membro-img-wrap">
+                <img
+                  src="/Ração de Canto/assets/images/Members/Foto - Kauan - Dev.jpg"
+                  alt="Foto de Kauan"
+                  class="membro-img"
+                />
+                <div class="membro-role-tag">
+                  Papel no projeto
+                </div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Kauan Barateli</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">23 anos</span>
+                  <span class="membro-chip">2 meses no projeto</span>
+                </div>
+                <p class="membro-historia">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PETS -->
+      <section class="pets section" id="pets" aria-labelledby="pets-titulo">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Pets Resgatados</span>
+            <h2 class="section-title" id="pets-titulo">
+              Conheça quem está esperando<br /><em>por você</em>
+            </h2>
+            <p class="section-subtitle">
+              Cada animal tem uma história. Aqui você acompanha a recuperação e
+              pode se interessar pela adoção.
+            </p>
+          </header>
+
+          <div
+            class="pets-filter"
+            role="group"
+            aria-label="Filtrar por espécie"
+          >
+            <button class="filter-btn filter-btn--active" data-filter="todos">
+              Todos
+            </button>
+            <button class="filter-btn" data-filter="caes">🐕 Cães</button>
+            <button class="filter-btn" data-filter="gatos">🐈 Gatos</button>
+            <button class="filter-btn" data-filter="disponiveis">
+              ✅ Disponíveis
+            </button>
+          </div>
+
+          <ul class="pets-grid" aria-label="Lista de pets">
+            <li class="pet-card" data-especie="caes" data-status="disponivel">
+              <div class="pet-img-wrap">
+                <img
+                  src="/Ração de Canto/assets/images/Pet/Foto Pétala.png"
+                  alt="Tobias, cão disponível para adoção"
+                  class="pet-img"
+                />
+                <span class="pet-badge pet-badge--disponivel">Disponível</span>
+              </div>
+              <div class="pet-body">
+                <div class="pet-header-row">
+                  <h3 class="pet-name">Pétala</h3>
+                  <span class="pet-emoji" aria-hidden="true">🐕</span>
+                </div>
+                <dl class="pet-meta">
+                  <div>
+                    <dt>Raça</dt>
+                    <dd>Pitbull</dd>
+                  </div>
+                  <div>
+                    <dt>Idade</dt>
+                    <dd>~5 anos</dd>
+                  </div>
+                  <div>
+                    <dt>Resgatado</dt>
+                    <dd>Jan 2025</dd>
+                  </div>
+                </dl>
+                <p class="pet-story">
+                  Essa é a Pétala, uma cachorrinha de 4 anos cheia de amor para dar! 
+                  <br>
+                  <br>
+                  Ela já é castrada, vacinada e super dócil, só precisa de um lar temporário ou, melhor ainda, uma adoção responsável e cheia de carinho! 
+                  <br>
+                  <br>
+                  Ela tem leishmaniose, mas isso não impede que ela tenha uma vida normal. A doença é tratável e, com a medicação diária que ela toma super bem junto com a ração, Pétala pode viver feliz e saudável! 
+                  <br>
+                  <br>
+                  Ela não se dá bem com gatos, mas, tirando isso, é uma companheira incrível, tranquila e que só quer amor e atenção!
+                </p>
+                <a href="https://wa.link/9vu6ym" class="btn btn--primary btn--small"
+                  >Quero adotar</a
+                >
+              </div>
+            </li>
+<!--
+            <li class="pet-card" data-especie="gatos" data-status="acolhimento">
+              <div class="pet-img-wrap">
+                <img
+                  src="broken-image.jpg"
+                  alt="Mimi, gata em acolhimento"
+                  class="pet-img"
+                />
+                <span class="pet-badge pet-badge--acolhimento"
+                  >Em acolhimento</span
+                >
+              </div>
+              <div class="pet-body">
+                <div class="pet-header-row">
+                  <h3 class="pet-name">Mimi</h3>
+                  <span class="pet-emoji" aria-hidden="true">🐈</span>
+                </div>
+                <dl class="pet-meta">
+                  <div>
+                    <dt>Raça</dt>
+                    <dd>Siamesa mix</dd>
+                  </div>
+                  <div>
+                    <dt>Idade</dt>
+                    <dd>~4 anos</dd>
+                  </div>
+                  <div>
+                    <dt>Resgatada</dt>
+                    <dd>Fev 2025</dd>
+                  </div>
+                </dl>
+                <p class="pet-story">
+                  Mimi foi resgatada de um apartamento abandonado com mais cinco
+                  gatos. Está em tratamento e em breve estará pronta para
+                  adoção.
+                </p>
+                <a href="#contato" class="btn btn--outline btn--small"
+                  >Acompanhar</a
+                >
+              </div>
+            </li>
+
+            <li class="pet-card" data-especie="caes" data-status="disponivel">
+              <div class="pet-img-wrap">
+                <img
+                  src="broken-image.jpg"
+                  alt="Pitanga, cadela disponível para adoção"
+                  class="pet-img"
+                />
+                <span class="pet-badge pet-badge--disponivel">Disponível</span>
+              </div>
+              <div class="pet-body">
+                <div class="pet-header-row">
+                  <h3 class="pet-name">Pitanga</h3>
+                  <span class="pet-emoji" aria-hidden="true">🐕</span>
+                </div>
+                <dl class="pet-meta">
+                  <div>
+                    <dt>Raça</dt>
+                    <dd>Pitbull mix</dd>
+                  </div>
+                  <div>
+                    <dt>Idade</dt>
+                    <dd>~3 anos</dd>
+                  </div>
+                  <div>
+                    <dt>Resgatada</dt>
+                    <dd>Mar 2025</dd>
+                  </div>
+                </dl>
+                <p class="pet-story">
+                  Pitanga passou por cirurgia e se recuperou muito bem. É dócil,
+                  ama crianças e adora brincar.
+                </p>
+                <a href="#contato" class="btn btn--primary btn--small"
+                  >Quero adotar</a
+                >
+              </div>
+            </li>
+
+            <li class="pet-card" data-especie="gatos" data-status="adotado">
+              <div class="pet-img-wrap">
+                <img
+                  src="broken-image.jpg"
+                  alt="Freud, gato adotado"
+                  class="pet-img"
+                />
+                <span class="pet-badge pet-badge--adotado">Adotado 🎉</span>
+              </div>
+              <div class="pet-body">
+                <div class="pet-header-row">
+                  <h3 class="pet-name">Freud</h3>
+                  <span class="pet-emoji" aria-hidden="true">🐈</span>
+                </div>
+                <dl class="pet-meta">
+                  <div>
+                    <dt>Raça</dt>
+                    <dd>Persa mix</dd>
+                  </div>
+                  <div>
+                    <dt>Idade</dt>
+                    <dd>~6 anos</dd>
+                  </div>
+                  <div>
+                    <dt>Adotado</dt>
+                    <dd>Abr 2025</dd>
+                  </div>
+                </dl>
+                <p class="pet-story">
+                  Freud ficou 4 meses em acolhimento. Encontrou uma família
+                  incrível e hoje manda fotos todo mês.
+                </p>
+                <a href="#noticias" class="btn btn--outline btn--small"
+                  >Ver história</a
+                >
+              </div>
+            </li>
+
+            <li class="pet-card" data-especie="caes" data-status="acolhimento">
+              <div class="pet-img-wrap">
+                <img
+                  src="broken-image.jpg"
+                  alt="Bolinha, cão em acolhimento"
+                  class="pet-img"
+                />
+                <span class="pet-badge pet-badge--acolhimento"
+                  >Em acolhimento</span
+                >
+              </div>
+              <div class="pet-body">
+                <div class="pet-header-row">
+                  <h3 class="pet-name">Bolinha</h3>
+                  <span class="pet-emoji" aria-hidden="true">🐕</span>
+                </div>
+                <dl class="pet-meta">
+                  <div>
+                    <dt>Raça</dt>
+                    <dd>Lhasa mix</dd>
+                  </div>
+                  <div>
+                    <dt>Idade</dt>
+                    <dd>~1 ano</dd>
+                  </div>
+                  <div>
+                    <dt>Resgatado</dt>
+                    <dd>Mai 2025</dd>
+                  </div>
+                </dl>
+                <p class="pet-story">
+                  Filhote resgatado durante uma chuva forte. Está crescendo
+                  feliz na casa da família acolhedora.
+                </p>
+                <a href="#contato" class="btn btn--outline btn--small"
+                  >Acompanhar</a
+                >
+              </div>
+            </li>
+
+            <li class="pet-card" data-especie="gatos" data-status="disponivel">
+              <div class="pet-img-wrap">
+                <img
+                  src="broken-image.jpg"
+                  alt="Nina, gata disponível para adoção"
+                  class="pet-img"
+                />
+                <span class="pet-badge pet-badge--disponivel">Disponível</span>
+              </div>
+              <div class="pet-body">
+                <div class="pet-header-row">
+                  <h3 class="pet-name">Nina</h3>
+                  <span class="pet-emoji" aria-hidden="true">🐈</span>
+                </div>
+                <dl class="pet-meta">
+                  <div>
+                    <dt>Raça</dt>
+                    <dd>SRD</dd>
+                  </div>
+                  <div>
+                    <dt>Idade</dt>
+                    <dd>~5 anos</dd>
+                  </div>
+                  <div>
+                    <dt>Resgatada</dt>
+                    <dd>Jun 2025</dd>
+                  </div>
+                </dl>
+                <p class="pet-story">
+                  Nina é tímida, mas muito carinhosa com quem conquista sua
+                  confiança. Ideal para um lar tranquilo.
+                </p>
+                <a href="#contato" class="btn btn--primary btn--small"
+                  >Quero adotar</a
+                >
+              </div>
+            </li>
+          </ul>
+-->
+          <div class="section-footer">
+            <a href="#contato" class="btn btn--outline"
+              >Ver todos os pets disponíveis</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTÍCIAS -->
+      <section
+        class="noticias section section--warm"
+        id="noticias"
+        aria-labelledby="noticias-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Notícias do Projeto</span>
+            <h2 class="section-title" id="noticias-titulo">
+              Acompanhe tudo que acontece<br /><em>por aqui</em>
+            </h2>
+          </header>
+
+          <div class="noticias-grid">
+            <article class="noticia-card noticia-card--destaque">
+              <div class="noticia-img-wrap">
+                <img
+                  src="broken-image.jpg"
+                  alt="Feira de adoção de junho de 2025"
+                  class="noticia-img"
+                />
+                <span class="noticia-tag">Evento</span>
+              </div>
+              <div class="noticia-body">
+                <time class="noticia-data" datetime="2025-06-14"
+                  >14 de junho de 2025</time
+                >
+                <h3 class="noticia-titulo">
+                  Feira de Adoção de Junho reuniu mais de 300 pessoas e resultou
+                  em 18 adoções
+                </h3>
+                <p class="noticia-resumo">
+                  O evento realizado na Praça Central foi um sucesso! Com
+                  música, food trucks pet-friendly e muito amor, 18 animais
+                  encontraram seus lares definitivos em um único dia.
+                </p>
+                <a href="#" class="noticia-link"
+                  >Leia mais <span aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+
+            <div class="noticias-secundarias">
+              <article class="noticia-card noticia-card--mini">
+                <div class="noticia-img-wrap">
+                  <img
+                    src="broken-image.jpg"
+                    alt="Castração em massa"
+                    class="noticia-img"
+                  />
+                  <span class="noticia-tag">Saúde</span>
+                </div>
+                <div class="noticia-body">
+                  <time class="noticia-data" datetime="2025-05-28"
+                    >28 mai 2025</time
+                  >
+                  <h3 class="noticia-titulo">
+                    Mutirão de castração atende 40 animais em um fim de semana
+                  </h3>
+                  <a href="#" class="noticia-link"
+                    >Leia mais <span aria-hidden="true">→</span></a
+                  >
+                </div>
+              </article>
+
+              <article class="noticia-card noticia-card--mini">
+                <div class="noticia-img-wrap">
+                  <img
+                    src="broken-image.jpg"
+                    alt="Voluntária com cachorro"
+                    class="noticia-img"
+                  />
+                  <span class="noticia-tag">Voluntariado</span>
+                </div>
+                <div class="noticia-body">
+                  <time class="noticia-data" datetime="2025-05-10"
+                    >10 mai 2025</time
+                  >
+                  <h3 class="noticia-titulo">
+                    Conheça Maria, a voluntária que acolheu 12 pets em dois anos
+                  </h3>
+                  <a href="#" class="noticia-link"
+                    >Leia mais <span aria-hidden="true">→</span></a
+                  >
+                </div>
+              </article>
+
+              <article class="noticia-card noticia-card--mini">
+                <div class="noticia-img-wrap">
+                  <img
+                    src="broken-image.jpg"
+                    alt="Doação de ração"
+                    class="noticia-img"
+                  />
+                  <span class="noticia-tag">Campanha</span>
+                </div>
+                <div class="noticia-body">
+                  <time class="noticia-data" datetime="2025-04-22"
+                    >22 abr 2025</time
+                  >
+                  <h3 class="noticia-titulo">
+                    Campanha Dia da Terra arrecada 800 kg de ração para os
+                    abrigos parceiros
+                  </h3>
+                  <a href="#" class="noticia-link"
+                    >Leia mais <span aria-hidden="true">→</span></a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-footer">
+            <a href="#" class="btn btn--outline">Ver todas as notícias</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA -->
+      <section
+        class="galeria section"
+        id="galeria"
+        aria-labelledby="galeria-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Galeria</span>
+            <h2 class="section-title" id="galeria-titulo">
+              Momentos que <em>tocam o coração</em>
+            </h2>
+          </header>
+
+          <div class="galeria-grid">
+            <figure class="galeria-item galeria-item--tall">
+              <img
+                src="/Ração de Canto/assets/images/Pet/Galeria/Foto Pétala.png"
+                alt=""
+                class="galeria-img"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="galeria-item">
+              <img
+                src="/Ração de Canto/assets/images/Pet/Galeria/Fiel de protetor de pescoço.jpeg"
+                alt=""
+                class="galeria-img"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="galeria-item">
+              <img
+                src="/Ração de Canto/assets/images/Pet/Galeria/Fiel descansando.jpg"
+                alt=""
+                class="galeria-img"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="galeria-item galeria-item--wide">
+              <img
+                src="/Ração de Canto/assets/images/Pet/Galeria/Fiel repousando.jpeg"
+                alt=""
+                class="galeria-img"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="galeria-item">
+              <img
+                src="/Ração de Canto/assets/images/Pet/Galeria/Foto Pétala - Descansando.jpg"
+                alt=""
+                class="galeria-img"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="galeria-item">
+              <img
+                src="/Ração de Canto/assets/images/Pet/Galeria/Foto Pétala - Brincando.jpg"
+                alt=""
+                class="galeria-img"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="section-footer">
+            <a href="#" class="btn btn--outline">Ver galeria completa</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMO AJUDAR -->
+      <section
+        class="ajudar section section--warm"
+        id="ajudar"
+        aria-labelledby="ajudar-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Como Ajudar</span>
+            <h2 class="section-title" id="ajudar-titulo">
+              Existem muitas formas de<br /><em>fazer a diferença</em>
+            </h2>
+            <p class="section-subtitle">
+              Escolha a forma que mais combina com você e comece a transformar
+              vidas hoje mesmo.
+            </p>
+          </header>
+
+          <ul class="ajudar-grid">
+            <li class="ajudar-card">
+              <div class="ajudar-icon" aria-hidden="true">🏠</div>
+              <h3 class="ajudar-card-title">Seja Família Acolhedora</h3>
+              <p class="ajudar-card-text">
+                Abra sua casa temporariamente para um pet em tratamento. Você
+                oferece amor, nós cuidamos dos custos veterinários.
+              </p>
+              <a href="https://wa.link/9vu6ym" class="btn btn--primary btn--small"
+                >Saiba como</a
+              >
+            </li>
+            <li class="ajudar-card ajudar-card--featured">
+              <div class="ajudar-icon" aria-hidden="true">💛</div>
+              <h3 class="ajudar-card-title">Faça uma Doação</h3>
+              <p class="ajudar-card-text">
+                Sua contribuição financia ração, medicamentos, vacinas e
+                cirurgias. Qualquer valor faz uma grande diferença.
+              </p>
+              <a href="https://wa.link/9vu6ym" class="btn btn--primary btn--small"
+                >Doe agora</a
+              >
+            </li>
+            <li class="ajudar-card">
+              <div class="ajudar-icon" aria-hidden="true">🙋</div>
+              <h3 class="ajudar-card-title">Voluntarie-se</h3>
+              <p class="ajudar-card-text">
+                Ajude nos resgates, eventos de adoção, transporte de animais ou
+                nas redes sociais do projeto.
+              </p>
+              <a href="https://wa.link/9vu6ym" class="btn btn--primary btn--small"
+                >Quero ajudar</a
+              >
+            </li>
+            <li class="ajudar-card">
+              <div class="ajudar-icon" aria-hidden="true">📣</div>
+              <h3 class="ajudar-card-title">Divulgue</h3>
+              <p class="ajudar-card-text">
+                Compartilhe nossos posts, conte para amigos e ajude a encontrar
+                lares para os pets que estão esperando.
+              </p>
+              <!-- <a href="#" class="btn btn--outline btn--small">Nossas redes</a> -->
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a
+            href="#inicio"
+            class="logo logo--footer"
+            aria-label="Ração de Canto — início"
+          >
+            <img src="/Ração de Canto/assets/images/Logo.png" alt="" class="logo-paw">
+            <span class="logo-text">Ração<em>de Canto</em></span>
+          </a>
+          <p>
+            Resgatando vidas e transformando histórias desde xxxx. Um projeto
+            feito de amor e dedicação voluntária.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Links rápidos">
+          <h4 class="footer-heading">Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Sobre o Projeto</a></li>
+            <li><a href="#equipe">Nossa Equipe</a></li>
+            <li><a href="#pets">Pets Resgatados</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="https://wa.link/9vu6ym">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-ajudar">
+          <h4 class="footer-heading">Como Ajudar</h4>
+          <ul>
+            <li><a href="https://wa.link/9vu6ym">Adotar um pet</a></li>
+            <li><a href="https://wa.link/9vu6ym">Ser família acolhedora</a></li>
+            <li><a href="https://wa.link/9vu6ym">Voluntariar-se</a></li>
+            <li><a href="https://wa.link/9vu6ym">Fazer uma doação</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-col">
+          <h4 class="footer-heading">Siga o projeto</h4>
+          <div class="footer-social-links">
+            <a
+              href="https://www.instagram.com/racaodecanto/"
+              class="social-btn social-btn--sm"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+            <!--
+            <a
+              href="#"
+              class="social-btn social-btn--sm"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+            <a
+              href="#"
+              class="social-btn social-btn--sm"
+              rel="noopener noreferrer"
+              >TikTok</a
+            >
+            <a
+              href="#"
+              class="social-btn social-btn--sm"
+              rel="noopener noreferrer"
+              >YouTube</a
+            >
+            -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-row">
+          <p class="footer-copy">
+            © 2025 Projeto Ração de Canto. Feito com 🐾 e muito amor.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/Ração de Canto/js/App.js" defer></script>
+  </body>
+</html>
