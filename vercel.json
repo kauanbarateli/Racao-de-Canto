@@ -1,0 +1,4 @@
+{
+  "builds": [{ "src": "Ração de Canto/**/*", "use": "@vercel/static" }],
+  "routes": [{ "src": "/", "dest": "Ração de Canto/index.html" }]
+}
