@@ -1713,10 +1713,10 @@ button {
     grid-template-columns: 1fr 1fr;
   }
   .hero-img-badge {
-    animation: float-mobile 6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    animation: none;
   }
   .media-float-badge {
-    animation: float-mobile 7s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    animation: none;
   }
 }
 
@@ -1857,10 +1857,10 @@ button {
     font-size: 0.62rem;
   }
   .hero-img-badge {
-    animation: float-mobile 7s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    animation: none;
   }
   .media-float-badge {
-    animation: float-mobile 8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+    animation: none;
   }
 }
 
