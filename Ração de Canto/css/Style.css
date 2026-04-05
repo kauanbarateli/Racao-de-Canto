@@ -906,7 +906,13 @@ button {
   background: #a36034;
   border-color: #a36034;
   color: var(--branco) !important;
-  box-shadow: var(--shadow-warm);
+}
+
+.filter-btn--active:hover {
+  background: #a36034;
+  border-color: #a36034;
+  color: var(--branco);
+  transform: none;
 }
 
 .pets-grid {
