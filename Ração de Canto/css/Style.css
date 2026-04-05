@@ -1787,6 +1787,14 @@ button {
     top: 0.25rem;
     right: 0.25rem;
   }
+  .eyebrow-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: var(--ambar);
+    border-radius: 50%;
+    animation: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1850,6 +1858,14 @@ button {
   .lightbox-img {
     max-width: 92vw;
     max-height: 55vh;
+  }
+  .eyebrow-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: var(--ambar);
+    border-radius: 50%;
+    animation: none;
   }
 }
 
