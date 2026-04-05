@@ -1661,7 +1661,7 @@ button {
     order: -1;
   }
   .hero-img-frame {
-    max-width: 360px;
+    max-width: 400px;
   }
   .hero-img {
     height: 340px;
@@ -1842,7 +1842,7 @@ button {
     padding-block: var(--s-lg);
   }
   .hero-img-frame {
-    max-width: 280px;
+    max-width: 300px;
   }
   .hero-img {
     height: 260px;
