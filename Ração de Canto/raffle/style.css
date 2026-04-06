@@ -184,97 +184,10 @@
   gap: 1rem;
 }
 
-/* Visual — duo de pets */
-.rifa-hero-visual {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.rifa-duo {
-  display: flex;
-  align-items: flex-end;
-  gap: 1rem;
-  position: relative;
-}
-
-.rifa-pet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-}
-
-.rifa-pet-img {
-  width: 185px;
-  height: 230px;
-  border-radius: var(--r-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  border: 4px solid var(--branco);
-  background: linear-gradient(135deg, var(--creme-escuro), var(--creme-medio));
-}
-.rifa-pet-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.rifa-pet-ph {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-.rifa-pet-ph span {
-  font-size: 3rem;
-}
-.rifa-pet-ph small {
-  font-size: 0.72rem;
-  color: var(--txt-muted);
-  font-weight: 600;
-}
-
-.rifa-pet--a .rifa-pet-img {
-  margin-bottom: 0;
-}
-.rifa-pet--b .rifa-pet-img {
-  margin-top: 2rem;
-}
-
-.rifa-pet-nome {
-  display: block;
-  background: #a36034;
-  color: var(--branco);
-  text-align: center;
-  padding: 0.45rem 0;
-  width: 100%;
-  font-family: var(--fonte-display);
-  font-size: 1.15rem;
-  font-weight: 700;
-  font-style: italic;
-  border-radius: 0 0 calc(var(--r-lg) - 4px) calc(var(--r-lg) - 4px);
-}
-
-.rifa-duo-amp {
-  font-family: var(--fonte-display);
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: var(--ambar);
-  line-height: 1;
-  align-self: center;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 4px 12px rgba(232, 162, 58, 0.35);
-}
-
 /* Badge flutuante */
 .rifa-divida-float {
-  position: absolute;
-  bottom: -1rem;
+  position: flex;
+  justify-content: center;
   right: -1.5rem;
   background: #a36034;
   color: var(--branco);
@@ -2938,5 +2851,85 @@ button {
   }
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* Container principal */
+.hero-img-kauan {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* Blocos das imagens */
+.img-petala-bloco,
+.img-fiel-bloco {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* Imagens */
+.img-kauan,
+.img-kauan-fiel {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efeito hover (desktop) */
+.img-kauan:hover,
+.img-kauan-fiel:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Pequeno destaque de posição */
+.img-petala-bloco {
+  transform: translateY(-10px);
+}
+
+.img-fiel-bloco {
+  transform: translateY(10px);
+}
+
+/* ===================== */
+/* RESPONSIVIDADE MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+  .hero-img-kauan {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .img-kauan,
+  .img-kauan-fiel {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .img-petala-bloco,
+  .img-fiel-bloco {
+    transform: none;
+  }
+}
+
+/* EXTRA: telas muito pequenas */
+@media (max-width: 480px) {
+  .img-kauan,
+  .img-kauan-fiel {
+    width: 100%;
+    max-width: 280px;
   }
 }

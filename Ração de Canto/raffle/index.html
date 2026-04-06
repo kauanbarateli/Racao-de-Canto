@@ -23,15 +23,21 @@
     <header class="site-header" id="site-header">
       <div class="container header-inner">
         <a href="/index.html" class="logo" aria-label="Ração de Canto — início">
-          <span class="logo-paw" aria-hidden="true">🐾</span>
+          <img
+            src="/Ração de Canto/assets/images/Logo.png"
+            alt=""
+            class="logo-paw"
+          />
           <span class="logo-text">Ração<em>de Canto</em></span>
         </a>
+
         <nav
           class="nav-primary"
           id="nav-primary"
           aria-label="Navegação principal"
         >
           <ul class="nav-list">
+            <!--
             <li><a href="/index.html#sobre" class="nav-link">Sobre</a></li>
             <li><a href="/index.html#equipe" class="nav-link">Equipe</a></li>
             <li><a href="/index.html#pets" class="nav-link">Pets</a></li>
@@ -42,6 +48,7 @@
             <li>
               <a href="/index.html#ajudar" class="nav-link">Como Ajudar</a>
             </li>
+            -->
             <li>
               <a href="#como-participar" class="nav-link nav-link--cta"
                 >Participar da Rifa</a
@@ -117,29 +124,16 @@
               >
             </div>
           </div>
-
-          <div class="rifa-hero-visual" aria-hidden="true">
-            <div class="rifa-duo">
-              <div class="rifa-pet rifa-pet--a">
-                <div class="rifa-pet-img">
-                  <!-- Substitua: <img src="img/fiel.jpg" alt="Fiel" /> -->
-                  <div class="rifa-pet-ph">
-                    <span>🐕</span><small>Foto do Fiel</small>
-                  </div>
-                </div>
-                <span class="rifa-pet-nome">Fiel</span>
-              </div>
-              <div class="rifa-duo-amp">&amp;</div>
-              <div class="rifa-pet rifa-pet--b">
-                <div class="rifa-pet-img">
-                  <!-- Substitua: <img src="img/petala.jpg" alt="Pétala" /> -->
-                  <div class="rifa-pet-ph">
-                    <span>🐕</span><small>Foto da Pétala</small>
-                  </div>
-                </div>
-                <span class="rifa-pet-nome">Pétala</span>
-              </div>
+          
+          <div class="hero-img-kauan">
+            <div class="img-petala-bloco">
+              <img src="/Ração de Canto/assets/images/Pet/Foto Pétala.png" alt="Foto Pétala" class="img-kauan">
             </div>
+            <div class="img-fiel-bloco">
+              <img src="/Ração de Canto/assets/images/Pet/Galeria/Fiel descansando.jpg" alt="Foto Fiel" class="img-kauan-fiel">
+            </div>
+          </div>
+            
             <div class="rifa-divida-float">
               <span class="rdf-label">Dívida clínica</span>
               <span class="rdf-value">R$&nbsp;13.000+</span>
@@ -453,7 +447,7 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER 
     <footer class="site-footer" role="contentinfo">
       <div class="container footer-grid">
         <div class="footer-brand">
@@ -512,7 +506,7 @@
         </div>
       </div>
     </footer>
-
+-->
     <script>
       (function () {
         const grid = document.getElementById("numeros-grid");
@@ -523,7 +517,8 @@
 
         // 🟢 LISTA DE NÚMEROS JÁ PAGOS (EDITA AQUI)
         const numerosPagos = [
-          7, 8, 26, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 70,
+          7, 8, 26, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 70, 16, 17, 18,
+          19, 20, 21, 22, 23, 24, 25, 29, 15, 1, 66, 67
         ];
 
         const selecionados = [];
