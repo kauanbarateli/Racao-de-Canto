@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rifa Solidária Fiel & Pétala — Ração de Canto. Ajude a quitar a dívida clínica e concorra a 6 prêmios incríveis."
+    />
+    <title>Rifa Solidária — Fiel & Pétala · Ração de Canto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700&family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Ração de Canto/css/style.css" />
+    <link rel="stylesheet" href="/Ração de Canto/raffle/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="/index.html" class="logo" aria-label="Ração de Canto — início">
+          <span class="logo-paw" aria-hidden="true">🐾</span>
+          <span class="logo-text">Ração<em>de Canto</em></span>
+        </a>
+        <nav
+          class="nav-primary"
+          id="nav-primary"
+          aria-label="Navegação principal"
+        >
+          <ul class="nav-list">
+            <li><a href="/index.html#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="/index.html#equipe" class="nav-link">Equipe</a></li>
+            <li><a href="/index.html#pets" class="nav-link">Pets</a></li>
+            <li>
+              <a href="/index.html#noticias" class="nav-link">Notícias</a>
+            </li>
+            <li><a href="/index.html#galeria" class="nav-link">Galeria</a></li>
+            <li>
+              <a href="/index.html#ajudar" class="nav-link">Como Ajudar</a>
+            </li>
+            <li>
+              <a href="#como-participar" class="nav-link nav-link--cta"
+                >Participar da Rifa</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-primary"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="rifa-hero" id="inicio" aria-labelledby="rifa-titulo">
+        <div class="rifa-hero-bg" aria-hidden="true">
+          <div class="rh-blob rh-blob--1"></div>
+          <div class="rh-blob rh-blob--2"></div>
+          <div class="rh-blob rh-blob--3"></div>
+          <div class="rh-pata rh-pata--1">🐾</div>
+          <div class="rh-pata rh-pata--2">🐾</div>
+        </div>
+
+        <div class="container rifa-hero-layout">
+          <div class="rifa-hero-text">
+            <span class="rifa-eyebrow">
+              <span class="rifa-pulse" aria-hidden="true"></span>
+              Rifa Solidária · @racaodecanto
+            </span>
+            <h1 class="rifa-titulo" id="rifa-titulo">
+              Fiel <em>&amp;</em><br />Pétala
+            </h1>
+            <p class="rifa-desc">
+              Dois animais que lutaram pela vida precisam da sua ajuda para
+              quitar uma dívida clínica de
+              <strong>mais de R$&nbsp;13.000,00</strong>. Cada número comprado é
+              um ato de amor.
+            </p>
+
+            <div
+              class="rifa-stats-bar"
+              role="list"
+              aria-label="Detalhes da rifa"
+            >
+              <div class="rifa-stat" role="listitem">
+                <span class="rs-num">209</span>
+                <span class="rs-lbl">números</span>
+              </div>
+              <div class="rs-sep" aria-hidden="true"></div>
+              <div class="rifa-stat" role="listitem">
+                <span class="rs-num">6</span>
+                <span class="rs-lbl">prêmios</span>
+              </div>
+              <div class="rs-sep" aria-hidden="true"></div>
+              <div class="rifa-stat" role="listitem">
+                <span class="rs-num">R$10</span>
+                <span class="rs-lbl">por número</span>
+              </div>
+            </div>
+
+            <div class="rifa-hero-actions">
+              <a href="#numeros" class="btn btn--primary"
+                >Escolher meu número</a
+              >
+              <a href="#como-participar" class="btn btn--outline"
+                >Como funciona</a
+              >
+            </div>
+          </div>
+
+          <div class="rifa-hero-visual" aria-hidden="true">
+            <div class="rifa-duo">
+              <div class="rifa-pet rifa-pet--a">
+                <div class="rifa-pet-img">
+                  <!-- Substitua: <img src="img/fiel.jpg" alt="Fiel" /> -->
+                  <div class="rifa-pet-ph">
+                    <span>🐕</span><small>Foto do Fiel</small>
+                  </div>
+                </div>
+                <span class="rifa-pet-nome">Fiel</span>
+              </div>
+              <div class="rifa-duo-amp">&amp;</div>
+              <div class="rifa-pet rifa-pet--b">
+                <div class="rifa-pet-img">
+                  <!-- Substitua: <img src="img/petala.jpg" alt="Pétala" /> -->
+                  <div class="rifa-pet-ph">
+                    <span>🐕</span><small>Foto da Pétala</small>
+                  </div>
+                </div>
+                <span class="rifa-pet-nome">Pétala</span>
+              </div>
+            </div>
+            <div class="rifa-divida-float">
+              <span class="rdf-label">Dívida clínica</span>
+              <span class="rdf-value">R$&nbsp;13.000+</span>
+              <span class="rdf-sub">precisamos de você</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- URGÊNCIA -->
+      <section class="rifa-urgencia" aria-label="Por que participar">
+        <div class="container urg-grid">
+          <div class="urg-card">
+            <div class="urg-icon" aria-hidden="true">🏥</div>
+            <div>
+              <h3>Dívida clínica real</h3>
+              <p>
+                Os tratamentos emergenciais de Fiel e Pétala geraram um débito
+                de <strong>R$&nbsp;13.000,00</strong> que precisa ser quitado
+                urgentemente.
+              </p>
+            </div>
+          </div>
+          <div class="urg-card urg-card--destaque">
+            <div class="urg-icon" aria-hidden="true">🎟️</div>
+            <div>
+              <h3>Como funciona</h3>
+              <p>
+                Cada número custa <strong>R$&nbsp;10,00</strong>. Serão
+                sorteados <strong>6 números</strong> — cada vencedor leva um
+                prêmio dos nossos parceiros.
+              </p>
+            </div>
+          </div>
+          <div class="urg-card">
+            <div class="urg-icon" aria-hidden="true">💛</div>
+            <div>
+              <h3>100% revertido</h3>
+              <p>
+                Todo o valor arrecadado vai direto para a clínica veterinária.
+                Você ajuda a vida deles e ainda concorre a prêmios.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRÊMIOS -->
+      <section class="section" id="premios" aria-labelledby="premios-titulo">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">🏆 Os Prêmios</span>
+            <h2 class="section-title" id="premios-titulo">
+              6 números sorteados,<br /><em>6 ganhadores</em>
+            </h2>
+            <p class="section-subtitle">
+              Cada número sorteado garante um dos prêmios abaixo, doados pelos
+              nossos parceiros solidários.
+            </p>
+          </header>
+
+          <div class="premios-grid">
+            <article class="premio-card">
+              <div class="premio-pos">1º</div>
+              <div class="premio-img-wrap">
+                <!-- <img src="img/premio-1.jpg" alt="Tattoo 10cm por @artividade.frk" /> -->
+                <div class="premio-ph">
+                  <span>📷</span>
+                  <p>Adicione a imagem aqui</p>
+                </div>
+              </div>
+              <div class="premio-body">
+                <h3 class="premio-titulo">1 Tattoo de 10cm</h3>
+                <p class="premio-parc">por <strong>@artividade.frk</strong></p>
+              </div>
+            </article>
+
+            <article class="premio-card">
+              <div class="premio-pos">2º</div>
+              <div class="premio-img-wrap">
+                <!-- <img src="img/premio-2.jpg" alt="Kit de Beleza TK Imports" /> -->
+                <div class="premio-ph">
+                  <span>📷</span>
+                  <p>Adicione a imagem aqui</p>
+                </div>
+              </div>
+              <div class="premio-body">
+                <h3 class="premio-titulo">1 Kit de Beleza</h3>
+                <p class="premio-parc">por <strong>@TK.IMPORTS</strong></p>
+              </div>
+            </article>
+
+            <article class="premio-card">
+              <div class="premio-pos">3º</div>
+              <div class="premio-img-wrap">
+                <!-- <img src="img/premio-3.jpg" alt="Sessão de Massagem @jucampeloestetica" /> -->
+                <div class="premio-ph">
+                  <span>📷</span>
+                  <p>Adicione a imagem aqui</p>
+                </div>
+              </div>
+              <div class="premio-body">
+                <h3 class="premio-titulo">1 Sessão de Massagem</h3>
+                <p class="premio-parc">
+                  por <strong>@jucampeloestetica</strong>
+                </p>
+              </div>
+            </article>
+
+            <article class="premio-card">
+              <div class="premio-pos">4º</div>
+              <div class="premio-img-wrap">
+                <!-- <img src="img/premio-4.jpg" alt="Voucher R$100 Ana Caren Beauty" /> -->
+                <div class="premio-ph">
+                  <span>📷</span>
+                  <p>Adicione a imagem aqui</p>
+                </div>
+              </div>
+              <div class="premio-body">
+                <h3 class="premio-titulo">Voucher de R$&nbsp;100</h3>
+                <p class="premio-parc">por <strong>@anacarenbeauty</strong></p>
+              </div>
+            </article>
+
+            <article class="premio-card">
+              <div class="premio-pos">5º</div>
+              <div class="premio-img-wrap">
+                <!-- <img src="img/premio-5.jpg" alt="Refeição para 4 pessoas Bar do Gil" /> -->
+                <div class="premio-ph">
+                  <span>📷</span>
+                  <p>Adicione a imagem aqui</p>
+                </div>
+              </div>
+              <div class="premio-body">
+                <h3 class="premio-titulo">Refeição para até 4 pessoas</h3>
+                <p class="premio-parc">por <strong>@o_bardogil2.0</strong></p>
+              </div>
+            </article>
+
+            <article class="premio-card">
+              <div class="premio-pos">6º</div>
+              <div class="premio-img-wrap">
+                <!-- <img src="img/premio-6.jpg" alt="2 Pares Ingressos UCI Cinema" /> -->
+                <div class="premio-ph">
+                  <span>📷</span>
+                  <p>Adicione a imagem aqui</p>
+                </div>
+              </div>
+              <div class="premio-body">
+                <h3 class="premio-titulo">2 Pares de Ingressos UCI</h3>
+                <p class="premio-parc">por <strong>Shopping da Ilha</strong></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GRADE DE NÚMEROS -->
+      <section
+        class="section section--warm"
+        id="numeros"
+        aria-labelledby="numeros-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">🎟️ Tabela de Números</span>
+            <h2 class="section-title" id="numeros-titulo">
+              Escolha o seu<br /><em>número da sorte</em>
+            </h2>
+            <p class="section-subtitle">
+              209 números disponíveis · R$ 10,00 cada · Pode comprar quantos
+              quiser!
+            </p>
+          </header>
+
+          <div class="numeros-legenda">
+            <span class="leg-item leg--disponivel">Disponível</span>
+            <span class="leg-item leg--reservado">Reservado</span>
+            <span class="leg-item leg--pago">Pago ✓</span>
+          </div>
+
+          <div class="numeros-wrap">
+            <div
+              class="numeros-grid"
+              id="numeros-grid"
+              role="list"
+              aria-label="Números disponíveis da rifa"
+            ></div>
+          </div>
+
+          <!-- CTA FLUTUANTE -->
+          <div class="cta-flutuante" id="cta-flutuante">
+            <span id="cta-texto">Nenhum número selecionado</span>
+            <button id="cta-btn">Confirmar no WhatsApp</button>
+          </div>
+
+          <p class="numeros-obs">
+            * Números reservados serão confirmados após envio do comprovante via
+            WhatsApp ou Instagram.
+          </p>
+        </div>
+      </section>
+
+      <!-- COMO PARTICIPAR -->
+      <section
+        class="section"
+        id="como-participar"
+        aria-labelledby="como-titulo"
+      >
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Como participar</span>
+            <h2 class="section-title" id="como-titulo">
+              Simples assim,<br /><em>em 3 passos</em>
+            </h2>
+          </header>
+
+          <div class="passos-layout">
+            <div class="passo-card">
+              <div class="passo-num" aria-hidden="true">1</div>
+              <h3>Escolha um número</h3>
+              <p>
+                Clique em qualquer número verde na tabela acima. Você pode
+                comprar quantos quiser!
+              </p>
+            </div>
+            <div class="passo-seta" aria-hidden="true">→</div>
+            <div class="passo-card">
+              <div class="passo-num" aria-hidden="true">2</div>
+              <h3>Faça o PIX</h3>
+              <p>
+                Envie R$&nbsp;10,00 por número para a chave abaixo e guarde o
+                comprovante.
+              </p>
+              <div class="pix-mini">
+                <span class="pix-mini-label">Chave PIX</span>
+                <strong>racaodecanto@gmail.com</strong>
+              </div>
+            </div>
+            <div class="passo-seta" aria-hidden="true">→</div>
+            <div class="passo-card">
+              <div class="passo-num" aria-hidden="true">3</div>
+              <h3>Confirme no Instagram</h3>
+              <p>
+                Mande o comprovante e os números escolhidos para o nosso
+                Instagram para confirmar.
+              </p>
+              <a
+                href="https://instagram.com/racaodecanto"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary btn--small"
+                >@racaodecanto</a
+              >
+            </div>
+          </div>
+
+          <div class="pix-destaque">
+            <div class="pix-d-icone" aria-hidden="true">💸</div>
+            <div class="pix-d-body">
+              <span class="pix-d-label">Chave PIX para pagamento</span>
+              <strong class="pix-d-chave">racaodecanto@gmail.com</strong>
+            </div>
+            <button
+              class="pix-d-copiar"
+              type="button"
+              aria-label="Copiar chave PIX"
+              onclick="
+                navigator.clipboard
+                  .writeText('racaodecanto@gmail.com')
+                  .then(() => {
+                    this.textContent = 'Copiado ✓';
+                    this.classList.add('copied');
+                    setTimeout(() => {
+                      this.textContent = 'Copiar';
+                      this.classList.remove('copied');
+                    }, 2200);
+                  })
+              "
+            >
+              Copiar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="rifa-cta-final" aria-labelledby="cta-final-titulo">
+        <div class="rifa-cta-deco" aria-hidden="true">
+          <span>🐾</span><span>🐾</span><span>🐾</span>
+        </div>
+        <div class="container rifa-cta-inner">
+          <h2 class="rifa-cta-titulo" id="cta-final-titulo">
+            Fiel e Pétala agradecem<br /><em>cada gesto de amor</em>
+          </h2>
+          <p>
+            Cada número comprado é um passo a mais para garantir a saúde e o
+            bem-estar deles. Compartilhe com amigos!
+          </p>
+          <div class="rifa-cta-btns">
+            <a href="#numeros" class="btn btn--primary">Escolher meu número</a>
+            <a
+              href="https://wa.me/559884383680?text=Olá!%20Quero%20participar%20da%20Rifa%20Solidária%20Fiel%20%26%20Pétala%20🐾"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--outline rifa-wpp-btn"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a
+            href="/index.html"
+            class="logo logo--footer"
+            aria-label="Ração de Canto — início"
+          >
+            <span class="logo-paw" aria-hidden="true">🐾</span>
+            <span class="logo-text">Ração<em>de Canto</em></span>
+          </a>
+          <p>
+            Resgatando vidas e transformando histórias desde 2016. Um projeto
+            feito de amor e dedicação voluntária.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="Links rápidos">
+          <h4 class="footer-heading">Navegação</h4>
+          <ul>
+            <li><a href="/index.html#sobre">Sobre o Projeto</a></li>
+            <li><a href="/index.html#pets">Pets Resgatados</a></li>
+            <li><a href="/index.html#galeria">Galeria</a></li>
+            <li><a href="/index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="footer-ajudar">
+          <h4 class="footer-heading">A Rifa</h4>
+          <ul>
+            <li><a href="#premios">Os prêmios</a></li>
+            <li><a href="#numeros">Tabela de números</a></li>
+            <li><a href="#como-participar">Como participar</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-col">
+          <h4 class="footer-heading">PIX para pagamento</h4>
+          <div class="footer-pix-box">
+            <span aria-hidden="true">📧</span>
+            <strong>racaodecanto@gmail.com</strong>
+          </div>
+          <div class="footer-selos">
+            <span>🐾 ONG sem fins lucrativos</span>
+            <span>♻️ Projeto sustentável</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-row">
+          <p class="footer-copy">
+            © 2025 Projeto Ração de Canto. Feito com 🐾 e muito amor.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Política de privacidade</a>
+            <span aria-hidden="true">·</span>
+            <a href="#">Termos de uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const grid = document.getElementById("numeros-grid");
+        const ctaTexto = document.getElementById("cta-texto");
+        const ctaBtn = document.getElementById("cta-btn");
+
+        if (!grid) return;
+
+        // 🟢 LISTA DE NÚMEROS JÁ PAGOS (EDITA AQUI)
+        const numerosPagos = [
+          7, 8, 26, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 70,
+        ];
+
+        const selecionados = [];
+
+        for (let i = 1; i <= 209; i++) {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "num-btn";
+          btn.textContent = String(i).padStart(3, "0");
+
+          // 🔒 SE JÁ FOI PAGO
+          if (numerosPagos.includes(i)) {
+            btn.classList.add("num-btn--pago");
+            btn.disabled = true;
+          }
+
+          btn.addEventListener("click", () => {
+            if (btn.disabled) return;
+
+            const index = selecionados.indexOf(i);
+
+            if (index > -1) {
+              // REMOVER
+              selecionados.splice(index, 1);
+              btn.classList.remove("num-btn--selected");
+            } else {
+              // ADICIONAR
+              selecionados.push(i);
+              btn.classList.add("num-btn--selected");
+            }
+
+            atualizarCTA();
+          });
+
+          grid.appendChild(btn);
+        }
+
+        function atualizarCTA() {
+          if (selecionados.length === 0) {
+            ctaTexto.textContent = "Nenhum número selecionado";
+            return;
+          }
+
+          const lista = selecionados
+            .slice()
+            .sort((a, b) => a - b)
+            .map((n) => String(n).padStart(3, "0"))
+            .join(", ");
+
+          const total = selecionados.length * 10;
+
+          ctaTexto.textContent = `${selecionados.length} número(s): ${lista} | Total: R$ ${total},00`;
+        }
+
+        ctaBtn.addEventListener("click", () => {
+          if (selecionados.length === 0) return;
+
+          const lista = selecionados
+            .slice()
+            .sort((a, b) => a - b)
+            .map((n) => String(n).padStart(3, "0"))
+            .join(", ");
+
+          const total = selecionados.length * 10;
+
+          const msg =
+            `Olá! Quero reservar os números: *${lista}* da Rifa Solidária Fiel & Pétala 🐾\n` +
+            `Total: R$ ${total},00`;
+
+          window.open(
+            `https://wa.me/559884383680?text=${encodeURIComponent(msg)}`,
+            "_blank",
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
