@@ -145,26 +145,55 @@
             </div>
           </div>
         </div>
-        <a href="/Ração de Canto/raffle/index.html" 
-   style="
-     display: inline-block;
-     background: #a36034;
-     color: #ffffff;
-     padding: 0.8em 1.6em;
-     border-radius: 999px;
-     font-family: sans-serif;
-     font-size: 0.95rem;
-     font-weight: 700;
-     text-decoration: none;
-     text-align: center;
-     box-shadow: 0 4px 14px rgba(163, 96, 52, 0.35);
-     transition: all 0.2s ease;
-   "
-   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 18px rgba(163, 96, 52, 0.45)'"
-   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 14px rgba(163, 96, 52, 0.35)'"
->
-  RIFA 🐾
-</a>
+        </section>
+
+      <!-- RIFA SOLIDÁRIA -->
+      <section class="rifa-banner" id="rifa" aria-labelledby="rifa-banner-titulo">
+        <div class="rifa-banner-bg" aria-hidden="true">
+          <div class="rifa-banner-blob rifa-banner-blob--1"></div>
+          <div class="rifa-banner-blob rifa-banner-blob--2"></div>
+        </div>
+        <div class="container rifa-banner-inner">
+          <div class="rifa-banner-content">
+            <span class="rifa-banner-eyebrow">
+              <span class="rifa-banner-dot" aria-hidden="true"></span>
+              Rifa Solidária · Ação Especial
+            </span>
+            <h2 class="rifa-banner-titulo" id="rifa-banner-titulo">
+              Fiel &amp; Pétala precisam<br /><em>da sua ajuda</em>
+            </h2>
+            <p class="rifa-banner-desc">
+              Estamos realizando uma rifa solidária para quitar a dívida
+              clínica de dois dos nossos animais resgatados. Cada número
+              comprado salva uma vida e ainda concorre a <strong>6 prêmios incríveis</strong>
+              doados pelos nossos parceiros.
+            </p>
+            <ul class="rifa-banner-itens" aria-label="Detalhes da rifa">
+              <li>
+                <span class="rifa-banner-item-icon" aria-hidden="true">🎟️</span>
+                <span><strong>209 números</strong> disponíveis</span>
+              </li>
+              <li>
+                <span class="rifa-banner-item-icon" aria-hidden="true">💰</span>
+                <span><strong>R$ 10,00</strong> por número</span>
+              </li>
+              <li>
+                <span class="rifa-banner-item-icon" aria-hidden="true">🏆</span>
+                <span><strong>6 prêmios</strong> a sortear</span>
+              </li>
+            </ul>
+          </div>
+          <div class="rifa-banner-cta">
+            <a
+              href="/Ração de Canto/raffle/index.html"
+              class="btn rifa-banner-btn"
+              aria-label="Participar da Rifa Solidária Fiel e Pétala"
+            >
+              🐾 Participar da Rifa
+            </a>
+            <p class="rifa-banner-cta-obs">100% do valor vai para os cuidados dos animais</p>
+          </div>
+        </div>
       </section>
 
       <!-- SOBRE -->
@@ -198,7 +227,7 @@
           <div class="sobre-content">
             <span class="section-label mobile">Sobre o Projeto</span>
             <h2 class="section-title" id="sobre-titulo">
-              Nascemos de um canto da rua,<br /><em>crescemos pelo amor</em>
+              O pouco para quem não tem nada,<br /><em>É MUITO!</em>
             </h2>
             <p class="sobre-text">
               O Ração de Canto surgiu em xxxx quando um grupo de jovens
@@ -260,15 +289,13 @@
             </p>
           </header>
 
-          <div class="equipe-grid">
+          <div class="equipe-grid" id="equipe-grid">
+
+            <!-- VISÍVEIS (6 primeiros) -->
             <article class="membro-card">
               <div class="membro-img-wrap">
-                <img
-                  src="/Ração de Canto/assets/images/Members/Yasmin.jpg"
-                  alt="Foto de Yasmin"
-                  class="membro-img"
-                />
-                <div class="membro-role-tag">Fundadora &amp; Coordenadora</div>
+                <img src="/Ração de Canto/assets/images/Members/Yasmin.jpg" alt="Foto de Yasmin" class="membro-img" />
+                <div class="membro-role-tag">Co Fundadora do Projeto</div>
               </div>
               <div class="membro-body">
                 <h3 class="membro-nome">Yasmin Valéria</h3>
@@ -276,20 +303,14 @@
                   <span class="membro-chip">x anos</span>
                   <span class="membro-chip">x anos no projeto</span>
                 </div>
-                <p class="membro-historia">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
-                </p>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
               </div>
             </article>
 
             <article class="membro-card">
               <div class="membro-img-wrap">
-                <img
-                  src="/Ração de Canto/assets/images/Members/Foto - Juan.png"
-                  alt="Foto de Juan "
-                  class="membro-img"
-                />
-                <div class="membro-role-tag">Papel no projeto</div>
+                <img src="/Ração de Canto/assets/images/Members/Foto - Juan.png" alt="Foto de Juan" class="membro-img" />
+                <div class="membro-role-tag">Fundador do Projeto</div>
               </div>
               <div class="membro-body">
                 <h3 class="membro-nome">Juan</h3>
@@ -297,20 +318,14 @@
                   <span class="membro-chip">x anos</span>
                   <span class="membro-chip">x anos no projeto</span>
                 </div>
-                <p class="membro-historia">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
-                </p>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
               </div>
             </article>
 
             <article class="membro-card">
               <div class="membro-img-wrap">
-                <img
-                  src="/Ração de Canto/assets/images/Members/Juliana Campelo.jpg"
-                  alt="Foto de Juliana Campêlo"
-                  class="membro-img"
-                />
-                <div class="membro-role-tag">Papel no projeto</div>
+                <img src="/Ração de Canto/assets/images/Members/Juliana Campelo.jpg" alt="Foto de Juliana Campêlo" class="membro-img" />
+                <div class="membro-role-tag">Financeiro</div>
               </div>
               <div class="membro-body">
                 <h3 class="membro-nome">Juliana Campêlo</h3>
@@ -318,22 +333,14 @@
                   <span class="membro-chip">x anos</span>
                   <span class="membro-chip">x anos no projeto</span>
                 </div>
-                <p class="membro-historia">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
-                </p>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
               </div>
             </article>
 
             <article class="membro-card">
               <div class="membro-img-wrap">
-                <img
-                  src="/Ração de Canto/assets/images/Members/Foto - Kauan - Dev.jpg"
-                  alt="Foto de Kauan"
-                  class="membro-img"
-                />
-                <div class="membro-role-tag">
-                  Papel no projeto
-                </div>
+                <img src="/Ração de Canto/assets/images/Members/Foto - Kauan - Dev.jpg" alt="Foto de Kauan" class="membro-img" />
+                <div class="membro-role-tag">Dev</div>
               </div>
               <div class="membro-body">
                 <h3 class="membro-nome">Kauan Barateli</h3>
@@ -341,11 +348,204 @@
                   <span class="membro-chip">23 anos</span>
                   <span class="membro-chip">2 meses no projeto</span>
                 </div>
-                <p class="membro-historia">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.
-                </p>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
               </div>
             </article>
+
+            <article class="membro-card">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-5.jpg" alt="Foto do Integrante 5" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 5</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-6.jpg" alt="Foto do Integrante 6" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 6</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <!-- OCULTOS (cards 7 a 16 — revelados ao clicar em "Ver todos") -->
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-7.jpg" alt="Foto do Integrante 7" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 7</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-8.jpg" alt="Foto do Integrante 8" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 8</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-9.jpg" alt="Foto do Integrante 9" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 9</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-10.jpg" alt="Foto do Integrante 10" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 10</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-11.jpg" alt="Foto do Integrante 11" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 11</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-12.jpg" alt="Foto do Integrante 12" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 12</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-13.jpg" alt="Foto do Integrante 13" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 13</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-14.jpg" alt="Foto do Integrante 14" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 14</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-15.jpg" alt="Foto do Integrante 15" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 15</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+            <article class="membro-card membro-card--oculto">
+              <div class="membro-img-wrap">
+                <img src="/Ração de Canto/assets/images/Members/integrante-16.jpg" alt="Foto do Integrante 16" class="membro-img" />
+                <div class="membro-role-tag">Voluntário</div>
+              </div>
+              <div class="membro-body">
+                <h3 class="membro-nome">Nome Integrante 16</h3>
+                <div class="membro-meta-row">
+                  <span class="membro-chip">x anos</span>
+                  <span class="membro-chip">x anos no projeto</span>
+                </div>
+                <p class="membro-historia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit corporis perferendis maiores expedita.</p>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Botão ver todos os integrantes -->
+          <div class="section-footer equipe-footer">
+            <button
+              class="btn btn--outline btn--ver-equipe"
+              id="btn-ver-equipe"
+              aria-expanded="false"
+              aria-controls="equipe-grid"
+            >
+              <span class="btn-ver-equipe-texto">Ver todos os integrantes</span>
+              <span class="btn-ver-equipe-icone" aria-hidden="true">↓</span>
+            </button>
           </div>
         </div>
       </section>

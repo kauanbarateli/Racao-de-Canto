@@ -630,4 +630,42 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  /* ══════════════════════════════════════════════════════════
+     14. EQUIPE — EXPANDIR / RECOLHER INTEGRANTES
+  ══════════════════════════════════════════════════════════ */
+  const btnVerEquipe = document.getElementById("btn-ver-equipe");
+  const equipeGrid = document.getElementById("equipe-grid");
+
+  if (btnVerEquipe && equipeGrid) {
+    const txtEl = btnVerEquipe.querySelector(".btn-ver-equipe-texto");
+
+    btnVerEquipe.addEventListener("click", () => {
+      const expandido = equipeGrid.classList.toggle("equipe-grid--expandida");
+
+      // Atualiza aria-expanded para acessibilidade
+      btnVerEquipe.setAttribute("aria-expanded", String(expandido));
+
+      // Atualiza o texto do botão
+      if (txtEl) {
+        txtEl.textContent = expandido
+          ? "Ocultar integrantes"
+          : "Ver todos os integrantes";
+      }
+
+      // Se recolhendo, rola suavemente de volta à seção
+      if (!expandido) {
+        const secEquipe = document.getElementById("equipe");
+        if (secEquipe) {
+          const offset = header ? header.offsetHeight + 16 : 80;
+          const top =
+            secEquipe.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({
+            top,
+            behavior: prefersReducedMotion ? "auto" : "smooth",
+          });
+        }
+      }
+    });
+  }
 });

@@ -1880,3 +1880,294 @@ button {
     scroll-behavior: auto;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   RIFA BANNER — Seção de chamada para a rifa solidária
+═══════════════════════════════════════════════════════════════ */
+
+.rifa-banner {
+  position: relative;
+  overflow: hidden;
+  background: #f5e9d4;
+  padding-block: 4rem;
+}
+
+/* Blobs decorativos de fundo */
+.rifa-banner-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.rifa-banner-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+  opacity: 0.25;
+}
+.rifa-banner-blob--1 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, var(--ambar-claro), transparent);
+  top: -120px;
+  right: -80px;
+}
+.rifa-banner-blob--2 {
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(200, 90, 46, 0.5), transparent);
+  bottom: -80px;
+  left: -60px;
+}
+
+/* Layout: conteúdo à esquerda, CTA à direita */
+.rifa-banner-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Eyebrow com ponto pulsante */
+.rifa-banner-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a36034;
+  margin-bottom: 0.9rem;
+}
+
+.rifa-banner-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: #a36034;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+/* Título principal */
+.rifa-banner-titulo {
+  font-family: var(--fonte-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: #2c1a0e;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.rifa-banner-titulo em {
+  font-style: italic;
+  font-weight: 300;
+  color: #a36034;
+}
+
+/* Parágrafo descritivo */
+.rifa-banner-desc {
+  font-size: 0.95rem;
+  color: #2c1a0e;
+  line-height: 1.75;
+  max-width: 560px;
+  margin-bottom: 1.5rem;
+}
+.rifa-banner-desc strong {
+  color: #a36034;
+  font-weight: 700;
+}
+
+/* Lista de itens (números, preço, prêmios) */
+.rifa-banner-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.rifa-banner-itens li {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  color: #2c1a0e;
+}
+.rifa-banner-itens strong {
+  color: #a36034;
+}
+
+.rifa-banner-item-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Coluna do CTA: botão + observação */
+.rifa-banner-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  min-width: 220px;
+}
+
+/* Botão principal da rifa */
+.rifa-banner-btn {
+  background: var(--ambar);
+  color: var(--txt-escuro);
+  border-color: var(--ambar);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.9em 2em;
+  white-space: nowrap;
+  box-shadow: 0 8px 28px rgba(232, 162, 58, 0.4);
+  transition:
+    background var(--t-fast),
+    transform var(--t-fast),
+    box-shadow var(--t-fast);
+}
+.rifa-banner-btn:hover {
+  background: var(--ambar-claro);
+  border-color: var(--ambar-claro);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(232, 162, 58, 0.5);
+}
+
+/* Observação abaixo do botão */
+.rifa-banner-cta-obs {
+  font-size: 0.75rem;
+  color: #2c1a0e;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   EQUIPE — Cards ocultos e botão "Ver todos"
+═══════════════════════════════════════════════════════════════ */
+
+/* Cards ocultos por padrão */
+.membro-card--oculto {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Quando a equipe está expandida, exibe os cards ocultos */
+.equipe-grid--expandida .membro-card--oculto {
+  display: block;
+  animation: revealCard 0.45s ease forwards;
+}
+
+/* Animação de entrada dos cards revelados */
+@keyframes revealCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay escalonado por posição */
+.equipe-grid--expandida .membro-card--oculto:nth-child(7) {
+  animation-delay: 0s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(8) {
+  animation-delay: 0.06s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(9) {
+  animation-delay: 0.12s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(10) {
+  animation-delay: 0.18s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(11) {
+  animation-delay: 0.24s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(12) {
+  animation-delay: 0.3s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(13) {
+  animation-delay: 0.36s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(14) {
+  animation-delay: 0.42s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(15) {
+  animation-delay: 0.48s;
+}
+.equipe-grid--expandida .membro-card--oculto:nth-child(16) {
+  animation-delay: 0.54s;
+}
+
+/* Footer da seção equipe */
+.equipe-footer {
+  margin-top: var(--s-md);
+}
+
+/* Botão ver/ocultar integrantes */
+.btn--ver-equipe {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 240px;
+  justify-content: center;
+}
+
+/* Ícone de seta que rotaciona ao expandir */
+.btn-ver-equipe-icone {
+  display: inline-block;
+  font-size: 1rem;
+  transition: transform var(--t-med);
+  line-height: 1;
+}
+
+/* Seta apontando para cima quando expandido */
+.btn--ver-equipe[aria-expanded="true"] .btn-ver-equipe-icone {
+  transform: rotate(180deg);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVIDADE — Rifa Banner e Equipe
+═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  /* Banner: empilha verticamente */
+  .rifa-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .rifa-banner-desc {
+    margin-inline: auto;
+  }
+  .rifa-banner-itens {
+    justify-content: center;
+  }
+  .rifa-banner-cta {
+    width: 100%;
+  }
+  .rifa-banner-btn {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rifa-banner {
+    padding-block: 3rem;
+  }
+  .rifa-banner-itens {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}
